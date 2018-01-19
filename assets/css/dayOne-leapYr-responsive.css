@@ -7,6 +7,9 @@
 }
 
 img{
+	width:auto;
+	height:auto;
+	max-width:100%;
 	opacity: 0.5;
 }
 
@@ -24,10 +27,7 @@ img{
 }
 
  @media(max-width:767px) {
-      img {
-        width: 200px;
-      }
-	  .alert{
+     	  .alert{
 		  font-size:20px;
 	  }
 	  
