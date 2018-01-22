@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+#row{
+	padding:30px;
+}
+
+#clock{
+	font-family: 'Exo', sans-serif;
+	height: 120px;
+	width: 650px; 
+	margin: 0 auto;
+	text-align: center;
+	font-size: 65px;
+	font-weight:bold;
+	color: #FFFFFF;
+	border-color: #6495ED;
+	border-radius: 100px;
+	background: rgb(153, 0, 153);
+	text-shadow: 2px 2px 1px #000000;
+	box-shadow: 1px 0 0 #ffff99,   0 1px 0 #ffff99, 
+				2px 1px 0 #ffff99, 1px 2px 0 #ffff99,
+				3px 2px 0 #ffff99, 2px 3px 0 #ffff99,
+				4px 3px 0 #ffff99, 3px 4px 0 #ffff99,
+				5px 4px 0 #ffff99, 4px 5px 0 #ffff99,
+				5px 5px 3px #000;
+	padding-top: 15px;
+}
+
+#text{
+	color:rgb(153, 0, 153);
+}
+
+.graduation{
+	font-family: 'Exo', sans-serif;
+	font-size: 30px;
+	position: relative;
+	color: #F39C12;
+	cursor: pointer;
+	height: 45px;
+	width: 350px; 
+	text-align: center;
+	border-color: #6495ED;
+	border-radius: 50px;
+	background: rgb(255,250,250);
+}
+
+@media(max-width:767px) {
+ #clock{
+	width: 350px;
+	height: 160px;
+	font-size:	50px;
+	padding-top: 10px;
+ }
+ 
+ .graduation{
+	font-size:45px;
+	width:550px;
+	height:65px;
+ }
+}
+
+@media(max-width:576px){
+#clock{
+	width: 480px;
+	height: 80px;
+	font-size:	50px;
+	padding-bottom:10px;
+}
+.graduation{
+	margin:0 auto;
+	font-size:30px;
+	width:350px;
+	height:50px;
+	}
+}
+
+
