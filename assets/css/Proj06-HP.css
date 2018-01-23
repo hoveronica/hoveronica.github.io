@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+.question{
+	font-weight: bold;
+	background-color: #82CAFF;
+}
+
+.answers{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.answers label{
+	display: block;
+
+}
+
+.answers label:hover{
+	color: #FDD017;
+}
+
+
+#results{
+	margin-top: 10px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#submit{
+	font-size: 20px;
+	background-color: #99CC66;
+	width: 150px;
+	height: 60px;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: inset 0 0 10px #FFFFFF;
+	border:3px;
+	border-radius: 16px;
+}
