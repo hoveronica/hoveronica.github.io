@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Exo');
 
 body{
+	font-family: 'Exo', sans-serif;
 	background: #ffffcc;
 	padding: 30px 40px 40px 40px;
 	margin: 0 auto;
