@@ -5,7 +5,6 @@
 	border-radius: 20px;
 	margin: 0 auto;
 	padding: 15px;
-	width: 80%;
 }
 
 .question{
@@ -62,7 +61,10 @@
 	font-size:20px;
 	font-weight: bold;
 }
+}
+
+@media(min-width:1024px){
 	.quiz-container{
-	width: 100%;
+		width:80%;
 	}
 }
