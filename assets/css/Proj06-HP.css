@@ -53,13 +53,16 @@
 
 @media(max-width:767px) {
  #title{
-	font-size:	40px;
+	font-size:40px;
  }
 }
 
 @media(max-width:576px){
 #title{
-	font-size:	30px;
+	font-size:30px;
 	font-weight: bold;
 }
+	.quiz-container{
+	width: 100%
+	}
 }
