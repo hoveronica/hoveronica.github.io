@@ -36,11 +36,15 @@
 		
 	<script>
 		function leapYear(){
-			var refYr = 1992;
 			var yr = document.getElementById("yr").value;
-			var diff = Math.abs(refYr - yr);
-			if (diff % 4 == 0) {
-				text="This is a leap year!";
+			if (yr % 4 == 0) {
+				if(yr % 100 == 0){
+					if(yr % 400 == 0){
+						text = "This is a leap year!";
+					}
+				}else{
+					text = "This is not a leap year!";
+				}
 			}else{
 				text="This is not a leap year!";
 			}
