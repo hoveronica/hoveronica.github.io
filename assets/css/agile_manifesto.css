@@ -95,3 +95,7 @@ h1{
         font-size: 20px;
     }
 }
+
+.col-sm-8 {
+padding-left: 2em;
+}
