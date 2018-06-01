@@ -1,44 +1,46 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html ng-app = "bible">
 <head>
 	<title>Veronica Ho | Animated Bible verse</title>
 	<meta charset="utf-8" />
 	<meta name="description" content="Veronica's online laboratory on web development tools" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="shortcut icon" href="images/favIcon/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="assets/css/mainLab.css">
 	<link rel="stylesheet" href="assets/css/dayFour-bible.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 
 <body>
-	<h2 id="title">Day Four</h2>
-	<h5 id="subtitle">Animated Bible verse</h5>
-	<div class="button" onclick="hideBulb()">Let there be light!</div>
-	
-<div class="parent">
-	<img id="bulb" src="images/lightBulbOff-white.png" width="400" height="350">
-</div>
-
-
-<div class="child">
-	<div class="text1">
-		<div id="ps1">YOUR WORD</div>
-		<div id="ps2">----is----</div>
-		<img id="psalm119" src="images/psalm119.jpeg" width="150" height="200" >
+	<header>
+		<h2 id="title">Day Four</h2>
+		<h5 id="subtitle">Animated Bible verse</h5>
+	<div class="before">
+		<div class="button" ng-click="light">Let there be light!</div>
+		<label class="switch">
+  		<input type="checkbox"><span class="slider round"></span>
+		</label>
 	</div>
-	<div class="text2">
-		<div id="ps3">A LAMP</div>
-		<div id="ps4">FOR MY FEET</div>
-		<div id="ps5">A LIGHT</div>
-		<div id="ps6">--ON MY PATH--</div>
-		<div id="verse">PSALM 119:105</div></div>
-</div>
+</header>
 
-
-<script src="assets/js/dayFour-bible.js"></script>	
+<section ng-show="light">
+	<div id="container-fluid">
+		<div class="text1">
+				<div id="ps1">YOUR WORD</div>
+				<div id="ps2">----is----</div>
+				<img id="psalm119" src="images/psalm119.jpeg" width="150" height="200">
+		</div>
+		<div class="text2">
+				<div id="ps3">A LAMP</div>
+				<div id="ps4">FOR MY FEET</div>
+				<div id="ps5">A LIGHT</div>
+				<div id="ps6">--ON MY PATH--</div>
+				<div id="verse">PSALM 119:105</div></div>
+	</div>
+</section>
 
 <footer>
 	<p>&copy; Veronica Ho | <a href="index.html">The Coding Laboratory</a></p>

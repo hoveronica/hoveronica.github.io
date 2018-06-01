@@ -43,14 +43,14 @@ div{
 
 .mouth{
 	border-top: 105px solid transparent;
-    border-right: 2px solid transparent;
+  border-right: 2px solid transparent;
 	border-left: 2px solid transparent;
-    border-bottom: 15px solid #FF0000;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    height: 30px;
-    width: 100px;
-    margin: 0 auto;
+  border-bottom: 15px solid #FF0000;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  height: 30px;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .torso{
