@@ -19,3 +19,7 @@ footer{
 h2{
 	font-weight: bold;
 }
+
+#header{
+	padding-bottom: 30px;
+}

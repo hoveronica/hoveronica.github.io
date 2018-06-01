@@ -5,26 +5,33 @@
 		<meta name="description" content="Veronica's online laboratory on web development tools" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="shortcut icon" href="images/favIcon/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/mainLab.css">
 		<link rel="stylesheet" href="assets/css/Proj06-HP.css">
 		<title>Veronica Ho | Harry Potter Trivia</title>
 	</head>
 	<body>
-		<h2>Project Six</h2>
-		<h5>Are You a True Harry Potter Fan?</h5>
-
-		<div class="quiz-container">
-			<header id="title">How much do you know about Harry Potter?</header>
-			<div id="quiz"></div>
-			<button id="submit">Submit Quiz</button>
-			<div id="results"></div>
+		<div class="container-fluid">
+			<div class="row" id="header">
+				<div class="col-sm-12"><h2>Project Six</h2></div>
+				<div class="col-sm-12"><h5>Are You a True Harry Potter Fan?</h5></div>
+			</div>
+			<div class="quiz-container">
+				<header id="title">How much do you know about Harry Potter?</header>
+				<div id="quiz"></div>
+				<button id="submit">Submit Quiz</button>
+				<div id="results"></div>
+			</div>
 		</div>
 
-
-		<script src="assets/js/Proj06-quiz.js"></script>
-
-		<footer class="container">
-			<p class="copyright">&copy; Veronica Ho | <a href="index.html">The Coding Laboratory</a> </p>
-		</footer>
+	<footer class="footer-copyright">
+		<div class="container fixed-bottom">
+			<span class="text-muted">&copy; Veronica Ho | <a href="index.html">The Coding Laboratory</a></span>
+		</div>
+	</footer>
+	<script src="assets/js/Proj06-quiz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 	</body>
 </html>

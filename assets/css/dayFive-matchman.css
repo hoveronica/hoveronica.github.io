@@ -2,17 +2,6 @@ div{
 	margin: 0 auto;
 }
 
-#text{
-	float: left;
-	width: 30%;
-}
-
-#character{
-	padding-left: 200px;
-	float: left;
-	width: 70%;
-}
-
 .brain{
 	position: relative;
 	overflow: hidden;
