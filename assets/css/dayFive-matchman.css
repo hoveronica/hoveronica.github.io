@@ -20,6 +20,7 @@ div{
 	border-radius: 50px;
 	left: 20%;
 }
+
 .rightEye{
 	position: absolute;
 	top: 35px;
@@ -31,15 +32,15 @@ div{
 }
 
 .mouth{
-	border-top: 105px solid transparent;
   border-right: 2px solid transparent;
 	border-left: 2px solid transparent;
-  border-bottom: 15px solid #FF0000;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  height: 30px;
+  border-bottom: 10px solid #FF0000;
+	-moz-border-radius:100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	padding-top: 130px;
+  height: 90px;
   width: 100px;
-  margin: 0 auto;
 }
 
 .torso{
@@ -50,20 +51,64 @@ div{
 }
 
 .leftHand{
-	margin-left:318px;
-	background:black;
-	height: 30px;
-	width:30px;
-	border-radius: 50%;
+	margin-left:295px;
+	width: 0;
+	height: 0;
+	border-top: 40px solid black;
+	border-right: 50px solid transparent;
 }
 
 .leftArm{
 	margin-left: 140px;
+	padding-left: 150px;
+	background: #0000000;
+	height: 75px;
+	width: 35px;
+	border: 5px solid black;
+	border-color: transparent #000000 #000000 transparent;
+	border-radius: 30% 0% 50% 30%;
+}
+
+.rightHand{
+	margin-left: 145px;
+	width: 0;
+	height: 20;
+	border-top: 40px solid black;
+	border-right: 50px solid transparent;
+}
+
+.rightArm{
+	margin-top:-30px;
+	margin-right:140px;
 	padding-left:150px;
 	background:#0000000;
-	height: 75px;
-	width:35px;
+	height:50px;
+	width:25px;
 	border: 5px solid black;
-	border-color: transparent #000000 #000000 transparent ;
-	border-radius: 30% 0% 50% 30%;
+	border-color: transparent transparent #000000 #000000;
+	border-radius: 0% 50% 80% 100%;
+}
+
+.leftLeg{
+	position:absolute;
+	margin-left: 80px;
+	margin-top: 220px;
+	background: #0000000;
+	height: 200px;
+	width: 50px;
+	border: 10px solid black;
+	border-color: #000000 #000000 transparent transparent;
+	border-radius: 50% 90% 100% 0%;
+}
+
+.rightLeg{
+	position:relative;
+	margin-left: 20px;
+	margin-top: 220px;
+	background: #0000000;
+	height: 200px;
+	width: 50px;
+	border: 10px solid black;
+	border-color: #000000 #000000 transparent transparent;
+	border-radius: 50% 90% 100% 0%;
 }
