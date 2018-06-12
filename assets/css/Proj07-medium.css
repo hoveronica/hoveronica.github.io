@@ -1,0 +1,41 @@
+img{
+  border-radius:8px;
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.description{
+  width:100%;
+  text-align: center;
+  margin: auto;
+}
+#title{
+  font-size:250%;
+  text-decoration: underline;
+  color: #507aba;
+}
+#characteristics{
+  font-size:110%;
+}
+.character{
+  width: 33%;
+  height: 50%;
+  padding: 1em 0 1em 0;
+}
+p{
+  font-size: 80%;
+  margin: inherit;
+  padding-right:.5em;
+}
+.name{
+  font-weight: bold;
+}
+.movie{
+  font-style: italic;
+}
+.footnote{
+  color: #ca3333;
+}
