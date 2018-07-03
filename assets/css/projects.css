@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+body{
+  padding: 1em;
+}
+header{
+  padding: 3.5em .5em 0 .5em;
+}
+h1,h2,h3,h4,h5,h6,body{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+h1{
+  text-transform: uppercase;
+}
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.name{
+  width:80%;
+  text-align: right;
+  line-height: 1.1em;
+}
+.projects{
+  letter-spacing: .2em;
+}
+.project__box{
+  position:relative;
+  max-width: 700px;
+  height: 300px;
+  padding:2rem;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background: #FFC;
+}
+.project__box::before{
+  content: "";
+  position : absolute;
+  z-index  : -1;
+  bottom   : 15px;
+  right    : 5px;
+  width    : 50%;
+  top      : 80%;
+  max-width: 200px;
+  box-shadow: 0px 13px 10px black;
+  transform: rotate(4deg);
+}
+.image{
+  width:70%;
+}
+.logo{
+  width:20%;
+  margin:auto;
+}
+#header{
+  width:100%;
+  padding-top: 1em;
+}
+#divisor{
+  border-bottom: 1px solid #313030;
+  height:2px;
+  background: black;
+  width:100%;
+}
+.projects{
+  color:grey;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+@media screen and (max-width: 375px){
+  #brand__logo{
+    width: 50px;
+    height: 50px;
+  }
+  .name{
+    font-size: .8em;
+  }
+}
+@media screen and (min-width: 376px) and (max-width:768px){
+  #brand__logo{
+    width: 80px;
+    height: 80px;
+  }
+  .projects{
+    width: 100%;
+    line-height: .1em;
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 769px) and (max-width:1023px){
+  #brand__logo{
+    width: 80px;
+    height: 80px;
+  }
+  .projects{
+    width: 100%;
+    /* line-height: .1em; */
+    font-size: 1.5em;
+  }
+  .name{
+    font-size: 130%;
+  }
+}
+@media screen and (min-width:1024px){
+  body{
+    padding-top: 1em;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flexbox{
+    width: 100%;
+  }
+  #brand__logo{
+    width: 100px;
+    height: 100px;
+  }
+  .name{
+    font-size: 1.5em;
+    line-height: .5em;
+  }
+  .projects{
+    /* padding-top: 1em; */
+    width: 100%;
+    /* line-height: .1em; */
+    font-size: 2em;
+  }
+}
