@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Veronica's online laboratory on web development tools" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		<link rel="shortcut icon" href="images/favIcon/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/mainLab.css">
-		<link rel="stylesheet" href="assets/css/dayOne-leapYr-responsive.css">
-		<title>Veronica Ho | Leap Year Calculator</title>
-	</head>
-	<body>
-
+<head>
+	<meta charset="utf-8">
+	<meta content="Veronica's online laboratory on web development tools" name="description">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="#ffffff" name="msapplication-TileColor">
+	<meta content="/ms-icon-144x144.png" name="msapplication-TileImage">
+	<meta content="#ffffff" name="theme-color">
+	<link href="images/favIcon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/mainLab.css" rel="stylesheet">
+	<link href="assets/css/dayOne-leapYr-responsive.css" rel="stylesheet">
+	<title>Veronica Ho | Leap Year Calculator</title>
+</head>
+<body>
 	<div class="container-fluid">
 		<div class="row" id="header">
-			<div class="col-sm-12"><h2>Project One</h2></div>
-			<div class="col-sm-12"><h5>Leap Year Calculator</h5></div>
+			<div class="col-sm-12">
+				<h2>Project One</h2>
+			</div>
+			<div class="col-sm-12">
+				<h5>Leap Year Calculator</h5>
+			</div>
 		</div>
 		<div class="row" id="calculator">
 			<div class="col-sm-8">
-				<input type="text" id="yr" placeholder="Enter a year:"></input>
-				<button onclick="leapYear()">Calculate</button>
+				<input id="yr" placeholder="Enter a year:" type="text"> <button onclick="leapYear()">Calculate</button>
 				<p id="output"></p>
 			</div>
 			<div class="col-sm-4">
-				<img src="images/leapYear-frog.png" width="400" height"172">
+				<img src="images/leapYear-frog.png" width="400">
 				<p id="link"><a href="http://www.entitymag.com/how-many-days-are-there-in-leap-year/">Why do we add a day?</a></p>
 			</div>
 		</div>
@@ -36,40 +39,39 @@
 			</div>
 		</div>
 	</div>
-
 	<script>
-		function leapYear(){
-			var yr = document.getElementById("yr").value;
-			if (yr % 4 == 0) {
-				if(yr % 100 == 0){
-					if(yr % 400 == 0){
-						text = "This is a leap year!";
-					}else{
-						text = "This is not a leap year!";
-					}
-				}else{
-					text = "This is a leap year!";
-				}
-			}else{
-				text="This is not a leap year!";
-			}
-			document.getElementById("output").innerHTML=text;
-		}
+	       function leapYear(){
+	           var yr = document.getElementById("yr").value;
+	           if (yr % 4 == 0) {
+	               if(yr % 100 == 0){
+	                   if(yr % 400 == 0){
+	                       text = "This is a leap year!";
+	                   }else{
+	                       text = "This is not a leap year!";
+	                   }
+	               }else{
+	                   text = "This is a leap year!";
+	               }
+	           }else{
+	               text="This is not a leap year!";
+	           }
+	           document.getElementById("output").innerHTML=text;
+	       }
 
-		function definition(){
-			alert("A leap year is a calendar year containing one additional day added to keep the calendar year synchronized with the astronomical or seasonal year. (Wikipedia)");
-		}
+	       function definition(){
+	           alert("A leap year is a calendar year containing one additional day added to keep the calendar year synchronized with the astronomical or seasonal year. (Wikipedia)");
+	       }
 	</script>
-
 	<footer class="footer-copyright">
 		<div class="container fixed-bottom">
 			<span class="text-muted">&copy; Veronica Ho | <a href="index.html">The Coding Laboratory</a></span>
 		</div>
 	</footer>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js">
+	</script>
 </body>
 </html>

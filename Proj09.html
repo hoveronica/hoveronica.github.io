@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Veronica Ho | Pixel Art Maker</title>
+	<meta charset="utf-8">
+	<meta content="Veronica's online laboratory on web development tools" name="description">
+	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+	<meta content="#ffffff" name="msapplication-TileColor">
+	<meta content="/ms-icon-144x144.png" name="msapplication-TileImage">
+	<meta content="#ffffff" name="theme-color">
+	<link href="images/favIcon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="assets/css/mainLab.css" rel="stylesheet">
+	<link href="assets/css/Proj09.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Lab: Pixel Art Maker</h1>
+		<article class="disclaimer">
+			<p><small>The Pixel Art Maker is project from Udacity's <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Front-End Web Developer Nanodegree</a>. This lab work focuses on manipulating the DOM using browser events. HTML & CSS codes are from Udacity, while JS codes are my own work.</small></p>
+		</article>
+	</header>
+	<section class="canvas">
+		<h2>Choose Grid Size</h2>
+		<form id="sizePicker" name="sizePicker">
+			Grid Height: <input id="inputHeight" min="1" name="height" type="number" value="1"> Grid Width: <input id="inputWidth" min="1" name="width" type="number" value="1"> <input type="submit">
+		</form>
+		<h2>Pick A Color</h2><input id="colorPicker" type="color">
+		<h2>Design Canvas</h2>
+		<table id="pixelCanvas"></table>
+	</section>
+	<script src="assets/js/proj09__pixel.js">
+	</script>
+	<footer class="footer-copyright">
+		<div class="container fixed-bottom">
+			<span class="text-muted">&copy; Veronica Ho | <a href="index.html">The Coding Laboratory</a></span>
+		</div>
+	</footer>
+</body>
+</html>
