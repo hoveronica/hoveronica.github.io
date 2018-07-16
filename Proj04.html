@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app = "bible">
+<html>
 <head>
 	<title>Veronica Ho | Animated Bible verse</title>
 	<meta charset="utf-8" />
@@ -9,25 +9,29 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="shortcut icon" href="images/favIcon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/mainLab.css">
 	<link rel="stylesheet" href="assets/css/dayFour-bible.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 
 <body>
-	<header>
-		<h2 id="title">Day Four</h2>
-		<h5 id="subtitle">Animated Bible verse</h5>
-	<div class="before">
-		<div class="button" ng-click="light">Let there be light!</div>
-		<label class="switch">
-  		<input type="checkbox"><span class="slider round"></span>
-		</label>
-	</div>
-</header>
+	<div class="container-fluid">
+		<div class="row" id="header">
+			<div class="col-sm-12"><h2 class="title">Project Four</h2></div>
+			<div class="col-sm-12"><h5 class="title">Animated Bible verse</h5></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6" id="button">
+				<div class="before">
+					<button>Let there be light!</button>
+					<!-- <p class="button">Let there be light!</p> -->
+					<!-- <label class="switch">
+  				<input type="checkbox"><span class="slider round"></span></label> -->
+				</div>
+			</div></div>
 
-<section ng-show="light">
-	<div id="container-fluid">
+<section class="psalm">
+	<div class="row">
 		<div class="text1">
 				<div id="ps1">YOUR WORD</div>
 				<div id="ps2">----is----</div>
@@ -41,9 +45,27 @@
 				<div id="verse">PSALM 119:105</div></div>
 	</div>
 </section>
-
-<footer>
-	<p>&copy; Veronica Ho | <a href="index.html">The Coding Laboratory</a></p>
+</div>
+<footer class="footer-copyright">
+	<div class="container fixed-bottom">
+		<span class="text-muted">&copy; Veronica Ho | <a href="index.html">The Coding Laboratory</a></span>
+	</div>
 </footer>
+<script>
+	const button = document.querySelector('#button');
+	const on = document.querySelector('.before');
+	const body = document.querySelector('body');
+	const title = document.querySelector('h2');
+	const subtitle = document.querySelector('h5');
+	button.addEventListener('click',function(){
+		button.removeChild(on);
+		body.style.backgroundColor = "#ffffcc";
+		title.style.color = "#212529";
+		subtitle.style.color = "#212529";
+	});
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>
 </html>

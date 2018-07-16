@@ -2,7 +2,7 @@ function hideBulb(){
 	var x = document.getElementById("bulb");
 	var displaySetting=x.style.display;
 	var lightSwitch=document.getElementById("button");
-	
+
 	if(displaySetting=="block"){
 		x.style.display="none";
 		lightSwitch.innerHTML="Let there be light!";
@@ -16,5 +16,4 @@ function hideBulb(){
 		document.getElementById("title").style.color="#000000";
 		document.getElementById("subtitle").style.color="#000000";
 	}
-
 }
