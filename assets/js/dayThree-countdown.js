@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 18, 2018 00:00:00").getTime();
+var countDownDate = new Date("Dec 21, 2018 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -19,9 +19,9 @@ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // Display the result in the element with id="clock"
 document.getElementById("clock").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text 
+  // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("clock").innerHTML = "Welcome to the Spring 2018!";
+    document.getElementById("clock").innerHTML = "Yay! I'm finally done!";
   }
 }, 1000);
